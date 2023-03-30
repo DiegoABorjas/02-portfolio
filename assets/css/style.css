@@ -6,6 +6,7 @@
     --brad: 2px;
   }
 
+/* global body */
 body {
     background-color: var(--dark);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -13,11 +14,12 @@ body {
     color: var(--light);
 }
 
+/* footer display */
 header {
     display: flex;
     flex-direction: column;
 }
-/* title style */
+/* title */
 .title {
     background-color: var(--highlight);
     text-align: center;
@@ -30,7 +32,7 @@ a {
     color: var(--highlight)
 }
 
-/* header & footer list style */
+/* header & footer unordered list */
 header ul, footer ul {
     display: flex;
     flex-wrap: wrap;
@@ -40,17 +42,17 @@ header ul, footer ul {
     list-style: none;
     text-decoration: underline;
     text-decoration-thickness: 2.5px;
-    text-underline-offset: 8px;
+    text-underline-offset: 6px;
 }
 
-/* list items hover effect */
+/* header & footer list items hover effect */
 header ul li:hover, footer ul li:hover {
     background-color: var(--highlight);
     color: var(--light);
     padding: 7px;
     border-radius: var(--brad);
 }
-/* anchor hover effect */
+/* unordered list anchor hover effect */
 ul a:hover {
     background-color: var(--highlight);
     color: var(--light);
@@ -67,7 +69,7 @@ ul a:hover {
     background-repeat: no-repeat;
     height: 250px;
 }
-/* hero h2 style */
+/* hero h2 */
 .hero h2 {
     background-color: var(--highlight);
     align-self: flex-end;
@@ -90,6 +92,7 @@ main h2::after {
     background-color: var(--light);    
 }
 
+/* about container flex display */
 .about-content {
     display: flex;
     justify-content: center;
@@ -97,7 +100,7 @@ main h2::after {
     gap: 1rem;
 }
 
-/* about image style */
+/* about image */
 .about img {
     max-height: 300px;
     max-width: 300px;
@@ -105,13 +108,13 @@ main h2::after {
     border-radius: var(--brad);
 }
 
-/* projects container style */
+/* projects container */
 .projects{
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
 }
-/* individual projects style */
+/* individual projects */
 .project, .main-project {
     display: flex;
     background-size: cover;
@@ -119,16 +122,18 @@ main h2::after {
     width: 100%;
     min-height: 8rem;
     border-width: 4px;
-    border-color: var(--highlight);
+    border-color: var(--light);
     border-style: solid;
     border-radius: var(--brad);
 }
 
+/*projects image links */
 .main-project a, .project a{
     display: block;
     width: 100%;
 }
 
+/* projects header */
 .project h3, .main-project h3 {
     background-color: var(--highlight);
     align-self: flex-end;
@@ -163,10 +168,12 @@ main h2::after {
     opacity: 0.5;
 }
 
+/* opacity change on image hover */
 #main-project:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover{
     opacity: 1;
 }
 
+/* footer title line across */
 footer h2::after {
     content: "";
     display: block;
@@ -177,6 +184,7 @@ footer h2::after {
     background-color: var(--light); 
 }
 
+/* media queries */
 @media screen and (min-width: 1024px) {
     .project {
         width: 48%;
@@ -215,5 +223,4 @@ footer h2::after {
         flex-direction: row;
         gap: 8rem;
     }
-
 }

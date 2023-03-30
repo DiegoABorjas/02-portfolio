@@ -1,3 +1,4 @@
+/* variables */
 :root {
     --dark: #202124;
     --light: #fff;
@@ -5,7 +6,7 @@
     --brad: 2px;
   }
 
-  body {
+body {
     background-color: var(--dark);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
@@ -16,7 +17,7 @@ header {
     display: flex;
     flex-direction: column;
 }
-
+/* title style */
 .title {
     background-color: var(--highlight);
     text-align: center;
@@ -24,11 +25,13 @@ header {
     padding: 0.5rem;
 }
 
+/* anchor tag color */
 a {
     color: var(--highlight)
 }
 
-ul {
+/* header & footer list style */
+header ul, footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -41,21 +44,21 @@ ul {
 }
 
 /* list items hover effect */
-ul li:hover {
+header ul li:hover, footer ul li:hover {
     background-color: var(--highlight);
     color: var(--light);
     padding: 7px;
     border-radius: var(--brad);
 }
-
-a:hover {
+/* anchor hover effect */
+ul a:hover {
     background-color: var(--highlight);
     color: var(--light);
     padding: 7px;
     border-radius: var(--brad);
     text-decoration: none;
 }
-
+/* hero picture */
 .hero {
     display: flex;
     justify-content: center;
@@ -64,7 +67,7 @@ a:hover {
     background-repeat: no-repeat;
     height: 250px;
 }
-
+/* hero h2 style */
 .hero h2 {
     background-color: var(--highlight);
     align-self: flex-end;
@@ -72,11 +75,11 @@ a:hover {
     border-radius: var(--brad);
     padding: 0.5rem;
 }
-
+/* margin for main content & footer */
 main, footer {
     margin: 1rem;
 }
-
+/* section title line across */
 main h2::after {
     content: "";
     display: block;
@@ -87,23 +90,43 @@ main h2::after {
     background-color: var(--light);    
 }
 
+.about-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* about image style */
+.about img {
+    max-height: 300px;
+    max-width: 300px;
+    align-self: center;
+    border-radius: var(--brad);
+}
+
+/* projects container style */
 .projects{
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
 }
-
+/* individual projects style */
 .project, .main-project {
     display: flex;
-    background-color: rgb(124, 139, 134);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100px;
+    min-height: 8rem;
     border-width: 4px;
     border-color: var(--highlight);
     border-style: solid;
     border-radius: var(--brad);
+}
+
+.main-project a, .project a{
+    display: block;
+    width: 100%;
 }
 
 .project h3, .main-project h3 {
@@ -112,6 +135,36 @@ main h2::after {
     color: var(--light);
     border-radius: var(--brad);
     padding: 0.5rem;
+}
+
+/* setting each project background */
+#main-project {
+    background-image: url(../images/sportsbud.jpg);
+    opacity: 0.5;
+}
+
+#calc-project {
+    background-image: url(../images/calculator.jpg);
+    opacity: 0.5;
+}
+
+#airbnb {
+    background-image: url(../images/airbnb.jpg);
+    opacity: 0.5;
+}
+
+#travel {
+    background-image: url(../images/travel.jpg);
+    opacity: 0.5;
+}
+
+#rockpaper {
+    background-image: url(../images/rockpaper.jpg);
+    opacity: 0.5;
+}
+
+#main-project:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover{
+    opacity: 1;
 }
 
 footer h2::after {
@@ -154,6 +207,13 @@ footer h2::after {
 
     header ul, .hero h2, .work, .about, footer {
         margin-right: 2rem;   
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 8rem;
     }
 
 }

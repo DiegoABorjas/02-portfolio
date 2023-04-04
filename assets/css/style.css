@@ -168,8 +168,13 @@ main h2::after {
     opacity: 0.5;
 }
 
+#password {
+    background-image: url(../images/password.jpg);
+    opacity: 0.5;
+}
+
 /* opacity change on image hover */
-#main-project:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover{
+#main-project:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover, #password:hover{
     opacity: 1;
 }
 

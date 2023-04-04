@@ -17,3 +17,11 @@ THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 ```
+
+Here is a screenshot of what the application looks like:
+
+![Getting Started](./assets/images/screenshot.jpg)
+
+Link to the deployed application:
+
+https://diegoaborjas.github.io/02-portfolio/

@@ -148,6 +148,11 @@ main h2::after {
     opacity: 0.5;
 }
 
+#quiz {
+    background-image: url(../images/coding-quiz.jpg);
+    opacity: 0.5;
+}
+
 #calc-project {
     background-image: url(../images/calculator.jpg);
     opacity: 0.5;
@@ -174,7 +179,7 @@ main h2::after {
 }
 
 /* opacity change on image hover */
-#main-project:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover, #password:hover{
+#main-project:hover, #quiz:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover, #password:hover{
     opacity: 1;
 }
 

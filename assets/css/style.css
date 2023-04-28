@@ -183,8 +183,13 @@ main h2::after {
     opacity: 0.5;
 }
 
+#weather {
+    background-image: url(../images/weather.jpg);
+    opacity: 0.5;
+}
+
 /* opacity change on image hover */
-#main-project:hover, #quiz:hover, #scheduler:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover, #password:hover{
+#main-project:hover, #weather:hover, #quiz:hover, #scheduler:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover, #password:hover {
     opacity: 1;
 }
 

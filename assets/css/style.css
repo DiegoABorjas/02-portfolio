@@ -163,16 +163,6 @@ main h2::after {
     opacity: 0.5;
 }
 
-#travel {
-    background-image: url(../images/travel.jpg);
-    opacity: 0.5;
-}
-
-#rockpaper {
-    background-image: url(../images/rockpaper.jpg);
-    opacity: 0.5;
-}
-
 #password {
     background-image: url(../images/password.jpg);
     opacity: 0.5;
@@ -187,9 +177,17 @@ main h2::after {
     background-image: url(../images/weather.jpg);
     opacity: 0.5;
 }
+#film-quest {
+    background-image: url(../images/film-quest-screenshot.jpg);
+    opacity: 0.5;
+}
+#readme-generator {
+    background-image: url(../images/readme-generator.jpg);
+    opacity: 0.5;
+}
 
 /* opacity change on image hover */
-#main-project:hover, #weather:hover, #quiz:hover, #scheduler:hover, #calc-project:hover, #airbnb:hover, #travel:hover, #rockpaper:hover, #password:hover {
+#main-project:hover, #readme-generator:hover, #film-quest:hover, #weather:hover, #quiz:hover, #scheduler:hover, #calc-project:hover, #airbnb:hover, #password:hover {
     opacity: 1;
 }
 

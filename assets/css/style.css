@@ -158,8 +158,8 @@ main h2::after {
     opacity: 0.5;
 }
 
-#airbnb {
-    background-image: url(../images/airbnb.jpg);
+#note-taker {
+    background-image: url(../images/note-taker.png);
     opacity: 0.5;
 }
 
@@ -187,7 +187,7 @@ main h2::after {
 }
 
 /* opacity change on image hover */
-#main-project:hover, #readme-generator:hover, #film-quest:hover, #weather:hover, #quiz:hover, #scheduler:hover, #calc-project:hover, #airbnb:hover, #password:hover {
+#main-project:hover, #readme-generator:hover, #film-quest:hover, #weather:hover, #quiz:hover, #scheduler:hover, #calc-project:hover, #note-taker:hover, #password:hover {
     opacity: 1;
 }
 
